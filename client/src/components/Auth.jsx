@@ -23,7 +23,7 @@ const Auth = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const {username, password, confirmPassword} = form
-        if(password.length < 8) {  
+        if(isSignup && password.length < 8) {  
             document.getElementById("message").innerHTML = "**Password length must be at least 8 characters";  
             return;  
          }  
