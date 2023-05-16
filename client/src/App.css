@@ -1,0 +1,719 @@
+:root {
+
+  }
+ /* 
+ color pallete dark to light
+ #2e0219
+ #4a001f
+ #6a0f49
+ #a7c4c2
+ #97efe9
+ */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #a7c4c2;
+    color: #2e0219;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  .authFormFieldsContent{
+    font-size: 32px;
+  }
+  .authFormFieldsContentI{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+  .authFormFieldsContentI label {
+    margin-bottom: 1%;
+    color: #2e0219;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .authFormFieldsContentI input {
+    padding: 1% 1%;
+    border: 1px solid #4a001f;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: all 150ms ease-in-out 0s;
+    width: 85%;
+    background: #97efe9;
+  }
+  .authFormFieldsContentI input::placeholder {
+    color: #2e0219;
+    width: 100%;
+    font-weight: unset;
+    font-family: sans-serif;
+  }
+  .authFormFieldsContentI input:hover{
+    border-color: #97efe9;
+  }
+  .authFormFieldsContentI input:focus, .authFormFieldsContentI input:active {
+    box-shadow: 0px 0px 0px 1.5px #6a0f49;
+    border-color: #6a0f49;
+  }
+  .authFormFieldsContentB {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .authFormFieldsContentB button {
+    border-radius: 4px;
+    background: #6a0f49;
+    border: 1px solid #6a0f49;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 1.5% 4%;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.8;
+  }
+  button:hover {
+    opacity: 1;
+  }
+  .authFormFieldsContentB {
+    background: #4a001f;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+  .authFormFieldsChange{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    font-size: 16px;
+  }
+  .authFromFieldsSwitch {
+    cursor: pointer;
+    border-radius: 4px;
+    background: #6a0f49;
+    border: 1px solid #6a0f49;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 1.5% 4%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.8;
+  }
+  .authFromFieldsSwitch:hover {
+    opacity: 1;
+  }
+  .app {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 4px 0px;
+  }
+  .channelEmpty {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+  .channelEmpty1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #2c2c30;
+    margin-bottom: 10px;
+  }
+  
+  .channelEmpty2 {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 120%;
+    margin: 0;
+    color: #858688;
+  }
+  .channel {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .channelListContainer {
+    display: flex;
+    height: 100%;
+    box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .channelListSidebar {
+    display: flex;
+    width: 72px;
+    background: #a7c4c2;
+    box-shadow: 1px 0px 0px #a7c4c2;
+  }
+  .channelListSidebarImj2 {
+    cursor: pointer;
+    margin-left: 10%;
+  }
+  .channelListSidebarImj2Text {
+    margin-top: -3%;
+    margin-bottom: -3%;
+  }
+  .channelListWrapper {
+    display: flex;
+    flex-direction: column;
+    background: #97efe9;
+    width: 240px;
+  }
+
+  .channelListHeader {
+    padding-left: 16px;
+    height: 62px;
+  }
+  .channelListHeaderText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2e0219;
+  }
+
+  .channelSearch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+  }
+  .channelSearchInput {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      background: #c1f5f1;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      border: 1px solid transparent;
+      width: 95%;
+    }
+    
+    .channelSearchInput:focus-within {
+      border: 1px solid #2e0219;
+    }
+    
+    .channelSearchImj {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+    }
+    .channelSearchInputText {
+      background: none;
+      border: none;
+      color: #2e0219;
+      font-family: sans-serif;
+      font-size: 16px;
+      outline: none;
+    }
+    
+    .channelSearchResults {
+      position: absolute;
+      height: fit-content;
+      width: 300px;
+      background: #fff;
+      border: 1px solid #e9e9ea;
+      box-sizing: border-box;
+      border-radius: 8px;
+      z-index: 10;
+      left: 230px;
+      top: 16px;
+    }
+    
+    .channelSearchResultsHeader {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: #858688;
+      margin-left: 12px;
+    }
+  
+    .channelSearchResultsHeader i {
+      font-weight: normal;
+      margin-left: 12px;
+    }
+    
+    .channelSearchResultsCont {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .channelSearchResultsF {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .channelSearchResultsCont:hover {
+      cursor: pointer;
+    }
+    
+    .channelSearchUsers {
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+    }
+    
+    .resultHashtag {
+      height: 24px;
+      width: 28px;
+      border-radius: 24px;
+      margin: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 120%;
+      color: #ffffff;
+    }
+    
+    .channelSearchText {
+      width: 100%;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: #2e0219;
+    }
+    .createChannel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .createChannelHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 62px;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+      padding-right: 20px;
+    }
+    
+    .createChannelHeader p {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #2e0219;
+      margin-left: 20px;
+    }
+
+    .channelNameInput {
+      display: flex;
+      flex-direction: column;
+      height: 169px;
+      padding-left: 20px;
+    }
+    
+    .channelNameInput input {
+      font-family: sans-serif;
+      font-size: 18px;
+      color: black;
+      height: 50px;
+      width: 540px;
+      background: #f7f6f8;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding-left: 16px;
+    }
+    
+    .channelNameInput input:focus {
+      border: 1px solid black;
+      outline: none;
+    }
+
+    .createChannelB {
+      height: 82px;
+      background: #2e0219;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border-bottom-right-radius: 16px;
+    
+      padding: 0px 10px;
+    }
+    
+    .createChannelB p {
+      font-family: sans-serif;
+      background: #4a001f;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px 20px;
+      color: #ffffff;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .scrollableContainer {
+      height: 100%; 
+      overflow-y: auto;
+    }
+    .userList {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .userListHeader {
+      display: flex;
+      align-items: center;
+      margin: 0px 20px;
+      justify-content: space-between;
+    }
+    
+    .userListHeader p {
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 17px;
+      color: #2e0219;
+      margin-top: 16px;
+    }
+    
+    .userListHeader p:first-child {
+      flex: 2;
+    }
+    
+    .userListHeader p:nth-child(2) {
+      flex: 0.5;
+      text-align: right;
+      margin: 0px 20px;
+    }
+    
+    .userListMessage {
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #2e0219;
+      margin: 20px;
+    }
+   
+    .userItem {
+      display: flex;
+      align-items: center;
+      margin: 0px 20px;
+      justify-content: space-between;
+    }
+    
+    .userItem:hover {
+      background: #97efe9;
+      cursor: pointer;
+    }
+    
+    .userItem-wrapper {
+      display: flex;
+      align-items: center;
+      flex: 2;
+      text-align: left;
+    }
+    
+    .userItemwrapper p {
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 17px;
+      color: #2e0219;
+      word-break: break-all;
+    }
+    
+    .userItemName {
+      font-weight: 500;
+    }
+    
+    .userItemNameW {
+      font-weight: 400;
+      width: 30%;
+      flex: 0.5;
+      text-align: right;
+      margin: 0px 20px;
+    }
+    
+    .userItemEmpty {
+      height: 28px;
+      width: 28px;
+      background: white;
+      border: 1px solid #dedddf;
+      border-radius: 14px;
+      box-sizing: border-box;
+      margin-left: 2px;
+    }
+
+    .editChannel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .editChannelHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 62px;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+      background-color: #97efe9;
+      padding-right: 20px;
+    }
+    
+    .editChannelHeader p {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #2e0219;
+      margin-left: 20px;
+    }
+
+    .channelNameInput {
+      display: flex;
+      flex-direction: column;
+      height: 169px;
+      padding-left: 20px;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .channelNameInput p {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 120%;
+      color: #2e0219;
+      margin-top: 30px;
+    }
+    
+    .channelNameInput input {
+      font-family: sans-serif;
+      font-size: 18px;
+      color: rgba(0, 0, 0);
+      height: 50px;
+      width: 90%;
+      background: #f7f6f8;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding-left: 16px;
+    }
+    
+    .channelNameInput input:focus {
+      outline: none;
+    }
+    
+    .channelNameInput input::placeholder {
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .editChannelB {
+      height: 82px;
+      background: #2e0219;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border-bottom-right-radius: 16px;
+    
+      padding: 0px 10px;
+    }
+    
+    .editChannelB p {
+      font-family: sans-serif;
+      background: #4a001f;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px 20px;
+      color: #ffffff;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .teamChannelHeaderCont {
+      position: relative;
+      height: 62px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background: #97efe9;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    
+    .teamChannelHeader2 {
+      display: flex;
+      align-items: center;
+    }
+    
+    .teamChannelHeaderName {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      color: #2e0219;
+      margin-right: 8px;
+    }
+    
+    .teamChannelHeader {
+      flex: 3;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      max-width: 500px;
+      white-space: nowrap;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    @media screen and (min-width: 1070px) {
+      .teamChannelHeader {
+        max-width: 700px;
+      }
+    }
+    
+    .teamChannelHeader::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .teamChannelHeaderM {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+    }
+    
+    .teamChannelHeaderM:nth-child(3) {
+      margin-right: 0px;
+    }
+    
+    .teamChannelHeader .str-chat__avatar {
+      margin-right: 8px;
+    }
+    
+    .teamChannelHeaderName.user {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    
+    .teamChannelHeaderR {
+      flex: 0.55;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: right;
+    }
+    
+    .teamChannelHeaderRText {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #2e0219;
+    }
+    
+    .teamChannelList {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .teamChannelListMessage {
+      color: #2e0219;
+      padding: 0 16px;
+    }
+    
+    .teamChannelListMessage.loading {
+      height: 115px;
+    }
+    
+    .teamChannelListHeader {
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .teamChannelListName {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      height: 16px;
+      color: #2e0219;
+      margin-bottom: 10px;
+    }
+
+    .channelPreviewWrapper {
+      height: 37px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .channelPreviewWrapper:hover {
+      background: rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .channelPreview {
+      display: flex;
+      align-items: center;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #2e0219;
+      padding: 0px 20px;
+      height: 100%;
+      width: 100%;
+      text-overflow: ellipsis;
+      word-break: break-all;
+    }
+    
+    .channelPreview.multi {
+      max-width: 220px;
+    }
+
+    .channelPreview.multi span:first-child {
+      position: relative;
+      z-index: 2;
+      bottom: 6px;
+    }
+    
+    .channelPreview.multi div:nth-child(2) {
+      position: relative;
+      right: 10px;
+      z-index: 1;
+      margin-bottom: 0px;
+    }
+    
+    .channelPreview.multi p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .channelPreviewSelected {
+      height: auto;
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .authMessage {
+      font-family: sans-serif;
+      font-size: 12;
+      color:#2e0219;
+    }
