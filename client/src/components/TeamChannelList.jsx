@@ -27,6 +27,7 @@ const TeamChannelList = ({children, error = false, loading, type, isCreating, se
                 {type === "team" ? "Channels" : "Direct Messages"}
             </p>
             <AddChannel
+                className = "plusButton"
                 isCreating = {isCreating}
                 setIsCreating = {setIsCreating}
                 setCreateType = {setCreateType}
