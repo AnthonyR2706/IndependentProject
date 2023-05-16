@@ -50,7 +50,8 @@ const UserList = ({setSelectedUsers}) => {
                     {id: 1},
                 )
                 if(response.users.length){
-                    setUsers(response.users)
+                    const sortedUsers = response.users.sort((a, b) => a.name.localeCompare(b.name));
+                    setUsers(sortedUsers);
                 } else{
                     setListEmpty(true);
                 }
